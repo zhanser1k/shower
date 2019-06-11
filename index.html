@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(4 / 3);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>NPS Team</h1>
+    </header>
+
+    <section class="slide" id="cover">
+        <figure>
+            <img class="cover" src="pictures/nps.jpg" alt="Hands on the orange typewriter in a park">
+            <figcaption class="copyright right white">
+                <a href="http://fiftyfootshadows.net/">© John Carey</a>
+            </figcaption>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Сделали в мае:</h2>
+        <ul>
+            <li>подключение Choco к NPS (Авиа покупка):
+                <ul>
+                    <li>подключение infobip для отправки SMS по Choco</li>
+                    <li>админка оператора: оптимизация, фильтры</li>
+                    <li>отчетность по Chocotravel в BI</li>
+                </ul>
+            </li>
+            <li>автоматизация расчетов по Qazaq Air</li>
+            <li>АБ тест быстрые возвраты</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Показатели</h2>
+        <figure>
+            <img class="nps-img place center bottom" src="pictures/aviata-nps.png">
+            <figcaption class="copyright right black">
+                <a href="https://app.powerbi.com/groups/me/reports/8fa316ab-c868-49d8-a438-117010e61c18/ReportSection">Power BI report</a>
+            </figcaption>
+        </figure>
+        <style>
+            .nps-img {
+                height: 380px;
+                margin-bottom: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Показатели</h2>
+        <figure>
+            <img class="nps-img place center bottom" src="pictures/choco-nps.png">
+            <figcaption class="copyright right black">
+                <a href="https://app.powerbi.com/groups/me/reports/8fa316ab-c868-49d8-a438-117010e61c18/ReportSection">Power BI report</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Каналы связи</h2>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/total-funnel.png">
+            <figcaption class="copyright right black">
+                <a href="https://app.powerbi.com/groups/me/reports/8fa316ab-c868-49d8-a438-117010e61c18/ReportSection">Power BI report</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/aviata-funnel.png">
+            <figcaption class="copyright right black">
+                <a href="https://app.powerbi.com/groups/me/reports/8fa316ab-c868-49d8-a438-117010e61c18/ReportSection">Power BI report</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/choco-funnel.png">
+            <figcaption class="copyright right black">
+                <a href="https://app.powerbi.com/groups/me/reports/8fa316ab-c868-49d8-a438-117010e61c18/ReportSection">Power BI report</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Статистика по возвратам</h2>
+        <div class="columns two">
+            <ul>
+                <li>Bek Air 20%</li>
+                <li>Scat 30%</li>
+                <li>Qazaq Air 6%</li>
+                <li>Air Astana 36%</li>
+            </ul>
+            <p><strong>Планируемое сокращение нагрузки на СП = 40%</strong></p>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Планы на июнь</h2>
+        <ul>
+            <li class="wip">автоматизация расчетов по Qazaq Air</li>
+            <li class="wip">отправка билета по push/SMS</li>
+            <li>подключение ЖД к NPS</li>
+            <li>подключение возвратов и обменов Aviata Avia к NPS</li>
+            <li class="wip">парсер для возврата средств по Kaspi (у них нет API ☹)</li>
+            <li class="wip">утвердили кол-во обзвонов для операторов (min 100 звонков в день и min 70 эффективных)</li>
+        </ul>
+        <style>
+            .wip {
+                color: #55BB06;
+            }
+        </style>
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.min.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
